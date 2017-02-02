@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+all_members	support/update-to-114th/114th-congress.py	/^all_members = sorted(senators_114, key=lambda k: k['lastname']) + sorted(reps_114, key=lambda k: k['lastname'])$/;"	v
+args	support/update-to-114th/114th-congress.py	/^args = parser.parse_args()$/;"	v
+bioguide_id	support/update-to-114th/114th-congress.py	/^            bioguide_id = cells[1].split("]")[0].strip().strip("[")$/;"	v
+body	support/update-to-114th/114th-congress.py	/^        body = "Newly elected to 114th congress"$/;"	v
+cells	support/update-to-114th/114th-congress.py	/^            cells = row.split("|")$/;"	v
+chamber	support/update-to-114th/114th-congress.py	/^            chamber = name_title_party.split(" ")[0]$/;"	v
+chamber	support/update-to-114th/114th-congress.py	/^        chamber = row["chamber"]$/;"	v
+departing_reps	support/update-to-114th/114th-congress.py	/^departing_reps = {}$/;"	v
+departing_senators	support/update-to-114th/114th-congress.py	/^departing_senators = {}$/;"	v
+district	support/update-to-114th/114th-congress.py	/^                district = "0"+district$/;"	v
+district	support/update-to-114th/114th-congress.py	/^            district = row["district"]$/;"	v
+district	support/update-to-114th/114th-congress.py	/^        district = ""$/;"	v
+file_path	support/update-to-114th/114th-congress.py	/^    file_path = os.path.join(members_dir,yaml_name)$/;"	v
+gh	support/update-to-114th/114th-congress.py	/^    gh = GitHub(username=username, password=password)$/;"	v
+help	support/update-to-114th/114th-congress.py	/^        help="create github issues")$/;"	v
+info	support/update-to-114th/114th-congress.py	/^            info = "({0}-{1}{2})".format(row["winner_party"],row["state_abbrev"],district).strip()$/;"	v
+lastname	support/update-to-114th/114th-congress.py	/^            lastname = name_title_party.split(" ")[-2]$/;"	v
+members_dir	support/update-to-114th/114th-congress.py	/^members_dir = "..\/..\/members"$/;"	v
+name_title_party	support/update-to-114th/114th-congress.py	/^                name_title_party = " ".join(["Sen.",row["new_member"],"({0}-{1})".format(row["winner_party"],row["state_abbrev"])])$/;"	v
+name_title_party	support/update-to-114th/114th-congress.py	/^            name_title_party = " ".join(["Rep.",row["new_member"],info])$/;"	v
+name_title_party	support/update-to-114th/114th-congress.py	/^            name_title_party = cells[2].split("]")[0].strip().strip("[")$/;"	v
+new_reps	support/update-to-114th/114th-congress.py	/^new_reps = {}$/;"	v
+new_senators	support/update-to-114th/114th-congress.py	/^new_senators = {}$/;"	v
+parser	support/update-to-114th/114th-congress.py	/^parser = argparse.ArgumentParser()$/;"	v
+password	support/update-to-114th/114th-congress.py	/^    password = getpass.getpass("Github password:")$/;"	v
+repo	support/update-to-114th/114th-congress.py	/^    repo = gh.repos('unitedstates')('contact-congress')$/;"	v
+reps_114	support/update-to-114th/114th-congress.py	/^reps_114 = []$/;"	v
+row_template	support/update-to-114th/114th-congress.py	/^row_template = "| [{bioguide_id}](https:\/\/github.com\/unitedstates\/contact-congress\/blob\/master\/members\/{bioguide_id}.yaml) | [{name_title_party}](http:\/\/lofgren.house.gov) | [![{bioguide_id} status](https:\/\/congressforms.eff.org\/recent-fill-image\/{bioguide_id})](http:\/\/efforg.github.io\/congress-forms-test\/?bioguide_id={bioguide_id})\\n"$/;"	v
+row_template_no_bg	support/update-to-114th/114th-congress.py	/^row_template_no_bg = "|  | {name_title_party} | |\\n"$/;"	v
+row_template_no_web	support/update-to-114th/114th-congress.py	/^row_template_no_web = "| [{bioguide_id}](https:\/\/github.com\/unitedstates\/contact-congress\/blob\/master\/members\/{bioguide_id}.yaml) | {name_title_party} | [![{bioguide_id} status](https:\/\/congressforms.eff.org\/recent-fill-image\/{bioguide_id})](http:\/\/efforg.github.io\/congress-forms-test\/?bioguide_id={bioguide_id})\\n"$/;"	v
+senators_114	support/update-to-114th/114th-congress.py	/^senators_114 = []$/;"	v
+title	support/update-to-114th/114th-congress.py	/^        title = "[%s] Rep. %s" % (m, new_reps[m])$/;"	v
+title	support/update-to-114th/114th-congress.py	/^        title = "[%s] Sen. %s" % (m, new_reps[m])$/;"	v
+username	support/update-to-114th/114th-congress.py	/^    username = raw_input("Github username:")$/;"	v
+website	support/update-to-114th/114th-congress.py	/^            website = cells[2].split("(")[2].strip().strip(")")$/;"	v
+websites	support/update-to-114th/114th-congress.py	/^websites = {}$/;"	v
+yaml_name	support/update-to-114th/114th-congress.py	/^    yaml_name = "%s.yaml" % bioguide_id$/;"	v
