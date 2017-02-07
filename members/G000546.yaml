@@ -99,8 +99,13 @@ contact_form:
             "No, I wanted to voice my opinion": "N"
     - javascript:
         - value: document.querySelector("#required-message").value = document.querySelector("#required-message").value.replace(/"/g, '');
-    - recaptcha:
-        - value: true
+    - wait:
+        - value: 5
+    - click_on:
+        - value: Recaptcha
+          selector: ".recaptcha-checkbox-checkmark"
+    - wait:
+        - value: 5
     - click_on:
         - value: Send Email
           selector: "#contactForm input[name='submit']"

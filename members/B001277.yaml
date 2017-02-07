@@ -7,7 +7,7 @@ contact_form:
     - select:
       - name: topic
         selector: "#topic"
-        value: "$TOPIC"
+        value: "Other"
         required: Yes
         options:
           - "Abortion Rights"

@@ -4,7 +4,7 @@ contact_form:
   action: /?p=contact
   steps:
     - visit: "http://www.bennet.senate.gov/?p=contact"
-    - find: 
+    - find:
         - selector: "#gen-fieldid-3"
     - fill_in:
         - name: firstName
@@ -80,7 +80,7 @@ contact_form:
             Technical Sergeant: Technical Sergeant
         - name: Issue
           selector: "#gen-fieldid-23"
-          value: $TOPIC
+          value: "Other"
           required: true
           options:
             "-- please select a topic --": "null"

@@ -9,7 +9,7 @@ contact_form:
     - select:
       - name: subject
         selector: "#subject"
-        value: "$TOPIC"
+        value: "Labor"
         required: Yes
         options:
           "Abortion": "JUD.ABORTION"

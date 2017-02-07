@@ -256,7 +256,7 @@ contact_form:
             - Wyoming
         - name: topic
           selector: "#topic"
-          value: $TOPIC
+          value: "Other"
           required: true
           options:
             Adoption/Childcare: Adoption
