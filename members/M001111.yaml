@@ -45,7 +45,7 @@ contact_form:
         - name: field_B104BE44-176D-4CD9-9FDA-DBCBAEB5AAF9
           selector: "#field_B104BE44-176D-4CD9-9FDA-DBCBAEB5AAF9"
           value: $NAME_PREFIX
-          required: true
+          required: false
           options:
             - Mr.
             - Ms.
@@ -116,8 +116,6 @@ contact_form:
             Welfare: WELF
             Women: WOMENS
             Civil Rights: Civil Rights
-    - javascript:
-        - value: document.querySelector("#field_5722C424-8601-4ABF-A8D1-AC11B9C45F87").value = document.querySelector("#field_5722C424-8601-4ABF-A8D1-AC11B9C45F87").value.replace(/"/g, '');
     - click_on:
         - value: Submit
           selector: div.buttonHolder input

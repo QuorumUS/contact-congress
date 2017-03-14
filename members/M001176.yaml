@@ -60,56 +60,11 @@ contact_form:
     - select:
         - name: subject
           selector: "#subject"
-          value: $TOPIC
+          value: "Other"
           required: true
-          options:
-            Abortion/Reproductive Rights: Abortion
-            Afghanistan/Iraq: Afghanistan
-            Agriculture: Agriculture
-            Animal Rights: Animal Rights
-            Arts and Humanities: Arts and Humanities
-            Banking: Banking
-            Budget: Budget
-            Campaign Finance Reform: Campaign Finance Reform
-            Children and Families: Children and Families
-            Civil Rights: Civil Rights
-            Crime and Drugs: Crime and Drugs
-            Defense: Defense
-            Education: Education
-            Elections and Congressional Affairs: Elections and Congressional Affairs
-            Energy: Energy
-            Environment and Public Works: Environment and Public Works
-            Foreign Affairs: Foreign Affairs
-            Government Shutdown: Government Shutdown
-            Guns: Guns
-            Health Care: Health Care
-            Housing: Housing
-            Help with a Government Agency / Casework: Casework
-            Immigration: Immigration
-            Indian Affairs: Indian Affairs
-            Insurance Health: Insurance Health
-            Interior/Forestry: Interior
-            Jobs and the Economy: Jobs and the Economy
-            Judiciary: Judiciary
-            Labor: Labor
-            LIHEAP: LIHEAP
-            LGBT Issues: LGBT Issues
-            Medicare/Medicaid: Medicare/Medicaid
-            "Military, Retiree Health Care": Military Health Care
-            Other: Other
-            Small Business: Small Business
-            Social Security: Social Security
-            Taxes: Taxes
-            Trade: Trade
-            Transportation: Transportation
-            Veterans: Veterans
     - click_on:
         - value: Send
           selector: "#side-search-btn"
-    - javascript:
-        - value: document.querySelector("#message").value = document.querySelector("#message").value.replace(/"/g, '');
-    - javascript:
-        - value: "document.querySelector('#side-search-btn').click();"
     - find:
         - selector: "h2"
           value: "Thank You"
