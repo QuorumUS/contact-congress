@@ -1,53 +1,49 @@
 bioguide: C000880
 contact_form:
   method: POST
-  action: http://www.crapo.senate.gov/webformActionIAV1.cfm
+  action: https://www.crapo.senate.gov/contact/email-me
   steps:
-    - visit: http://www.crapo.senate.gov/contact/email.cfm
-    - javascript:
-      - value: "Array.prototype.forEach.call(document.querySelectorAll('style,[rel=\"stylesheet\"],[type=\"text/css\"]'), function(element){ try{ element.parentNode.removeChild(element) } catch(err){} });"
+    - visit: https://www.crapo.senate.gov/contact/email-me
     - wait:
       - value: 1
     - fill_in:
       - name: firstName
-        selector: "#firstName"
+        selector: "#input-781129F8-4040-F985-52CD-46DE47AD5D2C"
         value: "$NAME_FIRST"
         required: Yes
       - name: lastName
-        selector: "#lastName"
+        selector: "#input-78112A2E-4040-F985-52CD-BA5873CADBC1"
         value: "$NAME_LAST"
         required: Yes
       - name: Address1
-        selector: "#Address1"
+        selector: "#input-7811EA94-4040-F985-52CD-A0C8B5E9A7D7"
         value: "$ADDRESS_STREET"
         required: Yes
-      - name: Address2
-        selector: "#Address2"
-        value: "$ADDRESS_STREET_2"
       - name: city
-        selector: "#city"
+        selector: "#input-7811EC8E-4040-F985-52CD-9F736859134A"
         value: "$ADDRESS_CITY"
         required: Yes
       - name: zip
-        selector: "#zip"
+        selector: "#input-7811ECEE-4040-F985-52CD-7531B698E92C"
         value: "$ADDRESS_ZIP5"
         required: Yes
-      - name: homePhone
-        selector: "#homePhone"
-        value: "$PHONE"
-      - name: workPhone
-        selector: "#workPhone"
+      - name: Phone
+        selector: "#input-7812E0DC-4040-F985-52CD-9D9A4BDC8EE8"
         value: "$PHONE"
       - name: email
         selector: "#email"
         value: "$EMAIL"
         required: Yes
+      - name: vemail
+        selector: "#input-7813561C-4040-F985-52CD-4A79B42F821F"
+        value: "$EMAIL"
+        required: Yes
       - name: messageSubject
-        selector: "#messageSubject"
+        selector: "#input-78156E99-4040-F985-52CD-A3EA1D68A55C"
         value: "$SUBJECT"
         required: Yes
       - name: MessageBody
-        selector: ".required[name='MessageBody']"
+        selector: "#input-78163367-4040-F985-52CD-D4AD6E614C69"
         value: "$MESSAGE"
         required: Yes
     - select:

@@ -113,6 +113,10 @@ contact_form:
             West Virginia: WV
             Wisconsin: WI
             Wyoming: WY
+        - name: "submitted[federal_agency_involved_dropdown]"
+          selector: "#edit-submitted-federal-agency-involved-dropdown"
+          value: "other"
+          required: true
     - fill_in:
         - name: "submitted[prefix_optional]"
           selector: "#edit-submitted-prefix-optional"

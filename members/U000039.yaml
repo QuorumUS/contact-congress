@@ -1,62 +1,57 @@
 bioguide: U000039
 contact_form:
   method: POST
-  action: https://www.tomudall.senate.gov/?p=contact
+  action: https://www.tomudall.senate.gov/contact/email-tom
   steps:
-    - visit: https://www.tomudall.senate.gov/?p=contact
+    - visit: https://www.tomudall.senate.gov/contact/email-tom
     - fill_in:
       - name: firstName
-        selector: "#firstName"
+        selector: "#input-B03E05C4-4040-F985-52CD-9CA44623DE5E"
         value: "$NAME_FIRST"
         required: Yes
       - name: lastName
-        selector: "#lastName"
+        selector: "#input-B03E04BD-4040-F985-52CD-48E090E769DA"
         value: "$NAME_LAST"
         required: Yes
       - name: Address1
-        selector: "#Address1"
+        selector: "#input-B03E05F1-4040-F985-52CD-A580E72A7D41"
         value: "$ADDRESS_STREET"
         required: Yes
-      - name: Address2
-        selector: "#Address2"
-        value: "$ADDRESS_STREET_2"
       - name: city
-        selector: "#city"
+        selector: "#input-B03E0595-4040-F985-52CD-C572364023FE"
         value: "$ADDRESS_CITY"
         required: Yes
       - name: zip
-        selector: "#contact_form #zip"
+        selector: "#input-B03E04CC-4040-F985-52CD-4DDB58DA474A"
         value: "$ADDRESS_ZIP5"
         required: Yes
+      - name: county
+        selector: "#input-0AACF9DE-5056-A066-6041-455B82DE1661"
+        value: "$ADDRESS_COUNTY"
+        required: Yes
       - name: phone
-        selector: "#phone"
+        selector: "#input-B03E046E-4040-F985-52CD-A2F10450D58D"
         value: "$PHONE"
         required: Yes
       - name: email
-        selector: "#contact_form #email"
+        selector: "#email"
         value: "$EMAIL"
         required: Yes
       - name: vemail
-        selector: "#vemail"
+        selector: "#input-B03E05A4-4040-F985-52CD-730C08912F4F"
         value: "$EMAIL"
         required: Yes
-      - name: MessageSubject
-        selector: "#MessageSubject"
+      - name: subject
+        selector: "#input-E535F970-D74F-D0F1-64CB-E9BB60C165D2"
         value: "$SUBJECT"
         required: Yes
       - name: MessageBody
-        selector: ".textarea"
+        selector: "#input-B03E05B4-4040-F985-52CD-8DF0BC10EEE2"
         value: "$MESSAGE"
         required: Yes
-      - name: ephone
-        selector: "#ephone"
-        value: ""
-      - name: mphone
-        selector: "#mphone"
-        value: ""
     - select:
       - name: Prefix
-        selector: "#contact_form select[name='Prefix']"
+        selector: "#input-B03E0527-4040-F985-52CD-C0DD6BEF325F"
         value: "$NAME_PREFIX"
         required: Yes
         options:
@@ -85,59 +80,53 @@ contact_form:
           - "Sister"
           - "Technical Sergeant"
       - name: Subject
-        selector: "#Subject"
+        selector: "#input-B03E04DB-4040-F985-52CD-18F332336F99"
         value: "$TOPIC"
         required: Yes
         options:
-          "\n\t\t\t\t\t\tAgriculture\n\t\t\t\t\t": "Agriculture"
-          "\n\t\t\t\t\t\tAnimals\n\t\t\t\t\t": "Animals"
-          "\n\t\t\t\t\t\tArts and Humanities\n\t\t\t\t\t": "Arts and Humanities"
-          "\n\t\t\t\t\t\tBanking & Finance\n\t\t\t\t\t": "Banking & Finance"
-          "\n\t\t\t\t\t\tBudget & Taxes\n\t\t\t\t\t": "Budget & Taxes"
-          "\n\t\t\t\t\t\tCampaign Finance & Election Reform\n\t\t\t\t\t": "Campaign Finance & Election Reform"
-          "\n\t\t\t\t\t\tCivil Liberties\n\t\t\t\t\t": "Civil Liberties"
-          "\n\t\t\t\t\t\tDefense & Military\n\t\t\t\t\t": "Defense & Military"
-          "\n\t\t\t\t\t\tEducation\n\t\t\t\t\t": "Education"
-          "\n\t\t\t\t\t\tE-mail Newsletters\n\t\t\t\t\t": "E-mail Newsletters"
-          "\n\t\t\t\t\t\tEnergy & Global Warming\n\t\t\t\t\t": "Energy & Global Warming"
-          "\n\t\t\t\t\t\tEnvironment & Conservation\n\t\t\t\t\t": "Environment & Conservation"
-          "\n\t\t\t\t\t\tFamily Planning\n\t\t\t\t\t": "Family Planning"
-          "\n\t\t\t\t\t\tFederal Employees\n\t\t\t\t\t": "Federal Employees"
-          "\n\t\t\t\t\t\tForeign Relations\n\t\t\t\t\t": "Foreign Relations"
-          "\n\t\t\t\t\t\tHealth Care\n\t\t\t\t\t": "Health Care"
-          "\n\t\t\t\t\t\tHomeland Security\n\t\t\t\t\t": "Homeland Security"
-          "\n\t\t\t\t\t\tHousing\n\t\t\t\t\t": "Housing"
-          "\n\t\t\t\t\t\tIndian Country\n\t\t\t\t\t": "Indian Country"
-          "\n\t\t\t\t\t\tImmigration & Border Security\n\t\t\t\t\t": "Immigration & Border Security"
-          "\n\t\t\t\t\t\tJobs & Economy\n\t\t\t\t\t": "Jobs & Economy"
-          "\n\t\t\t\t\t\tJudiciary\n\t\t\t\t\t": "Judiciary"
-          "\n\t\t\t\t\t\tLabor\n\t\t\t\t\t": "Labor"
-          "\n\t\t\t\t\t\tLaw Enforcement\n\t\t\t\t\t": "Law Enforcement"
-          "\n\t\t\t\t\t\tLGBT Issues\n\t\t\t\t\t": "LGBT Issues"
-          "\n\t\t\t\t\t\tNational Labs\n\t\t\t\t\t": "National Labs"
-          "\n\t\t\t\t\t\tPostal Service\n\t\t\t\t\t": "Postal Service"
-          "\n\t\t\t\t\t\tReligion\n\t\t\t\t\t": "Religion"
-          "\n\t\t\t\t\t\tRetirement\n\t\t\t\t\t": "Retirement"
-          "\n\t\t\t\t\t\tScience and Technology\n\t\t\t\t\t": "Science and Technology"
-          "\n\t\t\t\t\t\tSecond Amendment Rights\n\t\t\t\t\t": "Second Amendment Rights"
-          "\n\t\t\t\t\t\tSmall Business\n\t\t\t\t\t": "Small Business"
-          "\n\t\t\t\t\t\tSocial Security\n\t\t\t\t\t": "Social Security"
-          "\n\t\t\t\t\t\tState Issues\n\t\t\t\t\t": "State Issues"
-          "\n\t\t\t\t\t\tTaxes\n\t\t\t\t\t": "Taxes"
-          "\n\t\t\t\t\t\tTelecommunications\n\t\t\t\t\t": "Telecommunications"
-          "\n\t\t\t\t\t\tTrade\n\t\t\t\t\t": "Trade"
-          "\n\t\t\t\t\t\tTransportation\n\t\t\t\t\t": "Transportation"
-          "\n\t\t\t\t\t\tVeterans\n\t\t\t\t\t": "Veterans"
-    - javascript:
-      - value: document.querySelector(".textarea").value = document.querySelector(".textarea").value.replace(/"/g, '');
-    - javascript:
-      - value: "document.getElementById('contact_form').submit();"
-    - wait:
-      - value: 3
-    - find:
-      - selector: ".notice"
+          - Agriculture
+          - Animals
+          - Arts and Humanities
+          - Banking &amp; Finance
+          - Budget &amp; Taxes
+          - Campaign Finance &amp; Election Reform
+          - Civil Liberties
+          - Defense &amp; Military
+          - Education
+          - E-mail Newsletters
+          - Energy &amp; Global Warming
+          - Environment &amp; Conservation
+          - Family Planning
+          - Federal Employees
+          - Foreign Relations
+          - Health Care
+          - Homeland Security
+          - Housing
+          - Indian Country
+          - Immigration &amp; Border Security
+          - Jobs &amp; Economy
+          - Judiciary
+          - Labor
+          - Law Enforcement
+          - LGBT issue
+          - National Labs
+          - Postal Service
+          - Religion
+          - Retirement
+          - Science and Technology
+          - Second Amendment Rights
+          - Small Business
+          - Social Security
+          - State Issues
+          - Taxes
+          - Telecommunications
+          - Trade
+          - Transportation
+          - Veterans
+    - click_on:
+        - value: Submit
+          selector: div.controls input
   success:
     headers:
       status: 200
-    body:
-      contains: "Thank you for your message"
+

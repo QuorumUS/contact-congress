@@ -61,7 +61,7 @@ contact_form:
             - Senator
         - name: "submitted[message_details][topic]"
           selector: "#edit-submitted-message-details-topic"
-          value: $TOPIC
+          value: "Other"
           required: true
           options:
             - Abortion

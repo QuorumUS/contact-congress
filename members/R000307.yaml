@@ -40,7 +40,7 @@ contact_form:
     - select:
         - name: field_9E46D42D-A8A8-4014-AF7C-A316AA230D9F
           selector: "#field_9E46D42D-A8A8-4014-AF7C-A316AA230D9F"
-          value: $TOPIC
+          value: "Other"
           required: true
           options:
             - Government Shutdown
