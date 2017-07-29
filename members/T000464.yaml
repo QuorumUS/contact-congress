@@ -140,7 +140,7 @@ contact_form:
           "Wyoming ": WY
       - name: Subject
         selector: "#thisForm select[name='Subject']"
-        value: "$TOPIC"
+        value: "Abortion"
         required: Yes
         options:
           "\n\t\t\t\t\t\t\tAbortion\n\t\t\t\t\t\t": "Abortion"
@@ -200,8 +200,7 @@ contact_form:
     - wait:
       - value: 3
     - find:
-      - selector: "p"
-        value: "Thank you"
+      - selector: ".note"
   success:
     headers:
       status: 200
