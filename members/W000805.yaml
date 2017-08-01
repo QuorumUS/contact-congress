@@ -121,7 +121,6 @@ contact_form:
           value: $TOPIC
           required: true
           options:
-            Afghanistan: fr.afghan
             Agriculture: Agr
             Animal Welfare: Anim
             Arts and Humanities: Arts
@@ -149,7 +148,7 @@ contact_form:
             Intellectual Property: ip
             Internships: intern
             Iraq: fr.Iraq
-            Job Creation: emp
+            Jobs and Entrepreneurship: emp
             Labor: Lab
             Medicare/Medicaid: mcar.caid
             NASA: NASA

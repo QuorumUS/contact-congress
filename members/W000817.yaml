@@ -48,7 +48,7 @@ contact_form:
     - select:
         - name: Subject
           selector: "#issue_subject"
-          value: $TOPIC
+          value: Abortion
           required: true
           options:
             "\n\t\t\t\t\t\t\tAbortion\n\t\t\t\t\t\t": Abortion

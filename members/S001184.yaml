@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: /contact/email-me
   steps:
-    - visit: "http://www.scott.senate.gov/contact/email-me"
+    - visit: "https://www.scott.senate.gov/contact/email-me"
     - fill_in:
         - name: prefix
           selector: "#edit-prefix"
