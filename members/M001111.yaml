@@ -125,4 +125,4 @@ contact_form:
     headers:
       status: 200
     body:
-      contains: Thank you for your message!
+      contains: Contact Me

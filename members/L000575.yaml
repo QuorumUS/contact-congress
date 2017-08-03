@@ -171,8 +171,6 @@ contact_form:
             - Children
             - Civil Rights
             - Commerce
-            - Communications
-            - Congratulations
             - Crime
             - Defense
             - Drugs
@@ -265,12 +263,8 @@ contact_form:
     - click_on:
         - value: Submit
           selector: input.btn
-    - wait:
-        - value: 3
-    - find:
-        - selector: "#form-4873565B-4040-F985-52CD-58F5E3BCC94D div h1"
   success:
     headers:
       status: 200
     body:
-      contains: Thank you for submitting your Request to our office.
+      contains: " "
