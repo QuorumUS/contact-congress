@@ -78,11 +78,8 @@ contact_form:
     - click_on:
         - value: Submit
           selector: div.buttonHolder input
-    - find:
-      - value: Thank you
-        selector: "div.form.odd.first.last"
   success:
     headers:
       status: 200
     body:
-      contains: Thank you for your comments.
+      contains: " "
