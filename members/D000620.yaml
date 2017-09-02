@@ -13,7 +13,7 @@ contact_form:
         - value: Go To Next Step
           selector: "#emailForm input[name='submit']"
     - find:
-        - selector: "#contactForm"
+        - selector: "div#block-system-main"
     - fill_in:
         - name: prefix
           selector: "#prefix"
