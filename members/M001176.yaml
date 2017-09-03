@@ -62,6 +62,48 @@ contact_form:
           selector: "#subject"
           value: "Other"
           required: true
+<<<<<<< HEAD
+=======
+          options:
+            Abortion/Reproductive Rights: Abortion
+            Agriculture: Agriculture
+            Animal Rights: Animal Rights
+            Arts and Humanities: Arts and Humanities
+            Banking: Banking
+            Budget: Budget
+            Campaign Finance Reform: Campaign Finance Reform
+            Children and Families: Children and Families
+            Civil Rights: Civil Rights
+            Crime and Drugs: Crime and Drugs
+            Defense: Defense
+            Education: Education
+            Elections and Congressional Affairs: Elections and Congressional Affairs
+            Energy: Energy
+            Foreign Affairs: Foreign Affairs
+            Guns: Guns
+            Health Care: Health Care
+            Housing: Housing
+            Help with a Government Agency / Casework: Casework
+            Immigration: Immigration
+            Indian Affairs: Indian Affairs
+            Insurance Health: Insurance Health
+            Jobs and the Economy: Jobs and the Economy
+            Judiciary: Judiciary
+            Labor: Labor
+            LIHEAP: LIHEAP
+            LGBT Issues: LGBT Issues
+            Medicare/Medicaid: Medicare/Medicaid
+            "Military, Retiree Health Care": Military Health Care
+            Other: Other
+            Small Business: Small Business
+            Social Security: Social Security
+            Taxes: Taxes
+            Trade: Trade
+            Transportation: Transportation
+            Veterans: Veterans
+    - javascript:
+        - value: document.querySelector("#message").value = document.querySelector("#message").value.replace(/"/g, '');            
+>>>>>>> upstream/master
     - click_on:
         - value: Send
           selector: "#side-search-btn"
