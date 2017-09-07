@@ -41,13 +41,18 @@ contact_form:
           selector: "#field_24B273CC-4761-49A6-AC70-CBCACCCAD0DA"
           value: $MESSAGE
           required: true
+        - name: recaptcha_response_field
+          selector: "input#recaptcha_response_field"
+          captcha_selector: "img#recaptcha_challenge_image"
+          captcha_id_selector: "input#recaptcha_challenge_field"
+          value: "$CAPTCHA_SOLUTION"
+          required: true
     - select:
         - name: field_F33B2309-B7AF-40CA-AAF8-E40952FFF259
           selector: "#field_F33B2309-B7AF-40CA-AAF8-E40952FFF259"
           value: $TOPIC
           required: true
           options:
-            Casework (Help With a Federal Agency): CASEWORK
             Agriculture: AGR
             Budget: BUD
             Defense: DEF
@@ -70,6 +75,11 @@ contact_form:
             Other: OTH
     - javascript:
         - value: document.querySelector("#field_24B273CC-4761-49A6-AC70-CBCACCCAD0DA").value = document.querySelector("#field_24B273CC-4761-49A6-AC70-CBCACCCAD0DA").value.replace(/"/g, '');
+    - click_on:
+        - value: Submit
+          selector: input.btn.btn-primary
+    - find:
+        - selector: input.btn.btn-primary
     - click_on:
         - value: Submit
           selector: input.btn.btn-primary
