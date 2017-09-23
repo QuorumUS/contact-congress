@@ -62,8 +62,6 @@ contact_form:
           selector: "#subject"
           value: "Other"
           required: true
-<<<<<<< HEAD
-=======
           options:
             Abortion/Reproductive Rights: Abortion
             Agriculture: Agriculture
@@ -102,8 +100,7 @@ contact_form:
             Transportation: Transportation
             Veterans: Veterans
     - javascript:
-        - value: document.querySelector("#message").value = document.querySelector("#message").value.replace(/"/g, '');            
->>>>>>> upstream/master
+        - value: document.querySelector("#message").value = document.querySelector("#message").value.replace(/"/g, '');
     - click_on:
         - value: Send
           selector: "#side-search-btn"

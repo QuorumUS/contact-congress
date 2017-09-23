@@ -9,7 +9,7 @@ contact_form:
     - select:
       - name: subject
         selector: "#subject"
-        value: "Labor"
+        value: "$TOPIC"
         required: Yes
         options:
           "Abortion": "JUD.ABORTION"
@@ -45,7 +45,6 @@ contact_form:
           "Indian Affairs": "NATIVEAMERICAN"
           "Insurance": "HE"
           "Interior/Forestry": "NATRES"
-          "Internships": "Internships"
           "Iran": "IR"
           "Jobs": "JOBS"
           "Judiciary": "JUD"

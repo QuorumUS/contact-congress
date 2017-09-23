@@ -141,45 +141,44 @@ contact_form:
           value: $TOPIC
           required: true
           options:
-            - Academy Nominations
-            - Agriculture and Nutrition
-            - Animal Welfare
-            - Armed Services
-            - Banking and Financial Services
-            - Budget
-            - Census
-            - Children
-            - Civil Rights
-            - Consumer Protection
-            - Economy
-            - Education
-            - Energy
-            - Environment
-            - Ethics
-            - Flag Requests
-            - Foreign Relations
-            - Government Oversight
-            - Grants
-            - Guns and Crime
-            - Healthcare
-            - Help with Federal Government
-            - Housing
-            - Immigration
-            - Judiciary Issues
-            - Labor
-            - Letter Requests
-            - Marriage and Family
-            - Medicare and Medicaid
-            - National Security
-            - Postal Service
-            - Science and Technology
-            - Social Security
-            - Taxes
-            - Telecommunications
-            - Tour Request
-            - Trade
-            - Transportation
-            - Veterans
+            "\n\t\t\t\t\t\t\t\t\t\t\tAcademy Nominations\n\t\t\t\t\t\t\t\t\t\t": Academy Nominations
+            "\n\t\t\t\t\t\t\t\t\t\t\tAgriculture and Nutrition\n\t\t\t\t\t\t\t\t\t\t": Agriculture and Nutrition
+            "\n\t\t\t\t\t\t\t\t\t\t\tAnimal Welfare\n\t\t\t\t\t\t\t\t\t\t": Animal Welfare
+            "\n\t\t\t\t\t\t\t\t\t\t\tArmed Services\n\t\t\t\t\t\t\t\t\t\t": Armed Services
+            "\n\t\t\t\t\t\t\t\t\t\t\tBanking and Financial Services\n\t\t\t\t\t\t\t\t\t\t": Banking and Financial Services
+            "\n\t\t\t\t\t\t\t\t\t\t\tBudget\n\t\t\t\t\t\t\t\t\t\t": Budget
+            "\n\t\t\t\t\t\t\t\t\t\t\tCensus\n\t\t\t\t\t\t\t\t\t\t": Census
+            "\n\t\t\t\t\t\t\t\t\t\t\tChildren\n\t\t\t\t\t\t\t\t\t\t": Children
+            "\n\t\t\t\t\t\t\t\t\t\t\tConsumer Protection\n\t\t\t\t\t\t\t\t\t\t": Consumer Protection
+            "\n\t\t\t\t\t\t\t\t\t\t\tEconomy\n\t\t\t\t\t\t\t\t\t\t": Economy
+            "\n\t\t\t\t\t\t\t\t\t\t\tEducation\n\t\t\t\t\t\t\t\t\t\t": Education
+            "\n\t\t\t\t\t\t\t\t\t\t\tEnergy\n\t\t\t\t\t\t\t\t\t\t": Energy
+            "\n\t\t\t\t\t\t\t\t\t\t\tEnvironment\n\t\t\t\t\t\t\t\t\t\t": Environment
+            "\n\t\t\t\t\t\t\t\t\t\t\tEthics\n\t\t\t\t\t\t\t\t\t\t": Ethics
+            "\n\t\t\t\t\t\t\t\t\t\t\tFlag Requests\n\t\t\t\t\t\t\t\t\t\t": Flag Requests
+            "\n\t\t\t\t\t\t\t\t\t\t\tForeign Relations\n\t\t\t\t\t\t\t\t\t\t": Foreign Relations
+            "\n\t\t\t\t\t\t\t\t\t\t\tGovernment Oversight\n\t\t\t\t\t\t\t\t\t\t": Government Oversight
+            "\n\t\t\t\t\t\t\t\t\t\t\tGrants\n\t\t\t\t\t\t\t\t\t\t": Grants
+            "\n\t\t\t\t\t\t\t\t\t\t\tGuns and Crime\n\t\t\t\t\t\t\t\t\t\t": Guns and Crime
+            "\n\t\t\t\t\t\t\t\t\t\t\tHealthcare\n\t\t\t\t\t\t\t\t\t\t": Healthcare
+            "\n\t\t\t\t\t\t\t\t\t\t\tHelp with Federal Government\n\t\t\t\t\t\t\t\t\t\t": Help with Federal Government
+            "\n\t\t\t\t\t\t\t\t\t\t\tHousing\n\t\t\t\t\t\t\t\t\t\t": Housing
+            "\n\t\t\t\t\t\t\t\t\t\t\tImmigration\n\t\t\t\t\t\t\t\t\t\t": Immigration
+            "\n\t\t\t\t\t\t\t\t\t\t\tJudiciary Issues\n\t\t\t\t\t\t\t\t\t\t": Judiciary Issues
+            "\n\t\t\t\t\t\t\t\t\t\t\tLabor\n\t\t\t\t\t\t\t\t\t\t": Labor
+            "\n\t\t\t\t\t\t\t\t\t\t\tLetter Requests\n\t\t\t\t\t\t\t\t\t\t": Letter Requests
+            "\n\t\t\t\t\t\t\t\t\t\t\tMarriage and Family\n\t\t\t\t\t\t\t\t\t\t": Marriage and Family
+            "\n\t\t\t\t\t\t\t\t\t\t\tMedicare and Medicaid\n\t\t\t\t\t\t\t\t\t\t": Medicare and Medicaid
+            "\n\t\t\t\t\t\t\t\t\t\t\tNational Security\n\t\t\t\t\t\t\t\t\t\t": National Security
+            "\n\t\t\t\t\t\t\t\t\t\t\tPostal Service\n\t\t\t\t\t\t\t\t\t\t": Postal Service
+            "\n\t\t\t\t\t\t\t\t\t\t\tScience and Technology\n\t\t\t\t\t\t\t\t\t\t": Science and Technology
+            "\n\t\t\t\t\t\t\t\t\t\t\tSocial Security\n\t\t\t\t\t\t\t\t\t\t": Social Security
+            "\n\t\t\t\t\t\t\t\t\t\t\tTaxes\n\t\t\t\t\t\t\t\t\t\t": Taxes
+            "\n\t\t\t\t\t\t\t\t\t\t\tTelecommunications\n\t\t\t\t\t\t\t\t\t\t": Telecommunications
+            "\n\t\t\t\t\t\t\t\t\t\t\tTour Request\n\t\t\t\t\t\t\t\t\t\t": Tour Request
+            "\n\t\t\t\t\t\t\t\t\t\t\tTrade\n\t\t\t\t\t\t\t\t\t\t": Trade
+            "\n\t\t\t\t\t\t\t\t\t\t\tTransportation\n\t\t\t\t\t\t\t\t\t\t": Transportation
+            "\n\t\t\t\t\t\t\t\t\t\t\tVeterans\n\t\t\t\t\t\t\t\t\t\t": Veterans
     - javascript:
         - value: document.querySelector("#MessageBody").value = document.querySelector("#MessageBody").value.replace(/"/g, '');
     - javascript:
@@ -194,4 +193,4 @@ contact_form:
     headers:
       status: 200
     body:
-      contains: Your message has been sent.
+      contains: Thank you!
