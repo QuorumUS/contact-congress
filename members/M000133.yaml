@@ -61,7 +61,7 @@ contact_form:
           - Veterans
           - Welfare/SNAP
     - wait:
-      - value: 3
+      - value: 5
     - find:
       - selector: "#continue-form"
     - fill_in:
@@ -179,7 +179,7 @@ contact_form:
             WV: WV
             WY: WY
     - wait:
-        - value: 1
+        - value: 5
     - javascript:
         - value: document.querySelector("#message").value = document.querySelector("#message").value.replace(/"/g, '');
     - click_on:
@@ -188,6 +188,8 @@ contact_form:
     - find:
         - selector: "h2"
           value: "Thank You"
+    - wait:
+        - value: 3
   success:
     headers:
       status: 200

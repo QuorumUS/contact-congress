@@ -7,7 +7,7 @@ contact_form:
     - select:
       - name: topic
         selector: "#topic"
-        value: "Other"
+        value: "$TOPIC"
         required: Yes
         options:
           - "Abortion Rights"
@@ -121,4 +121,4 @@ contact_form:
     headers:
       status: 200
     body:
-      contains: Message
+      contains: "Thank you again for writing"

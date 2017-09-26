@@ -141,7 +141,6 @@ contact_form:
           value: $TOPIC
           required: true
           options:
-            "\n\t\t\t\t\t\t\t\t\t\t\tAcademy Nominations\n\t\t\t\t\t\t\t\t\t\t": Academy Nominations
             "\n\t\t\t\t\t\t\t\t\t\t\tAgriculture and Nutrition\n\t\t\t\t\t\t\t\t\t\t": Agriculture and Nutrition
             "\n\t\t\t\t\t\t\t\t\t\t\tAnimal Welfare\n\t\t\t\t\t\t\t\t\t\t": Animal Welfare
             "\n\t\t\t\t\t\t\t\t\t\t\tArmed Services\n\t\t\t\t\t\t\t\t\t\t": Armed Services
@@ -157,22 +156,20 @@ contact_form:
             "\n\t\t\t\t\t\t\t\t\t\t\tEthics\n\t\t\t\t\t\t\t\t\t\t": Ethics
             "\n\t\t\t\t\t\t\t\t\t\t\tFlag Requests\n\t\t\t\t\t\t\t\t\t\t": Flag Requests
             "\n\t\t\t\t\t\t\t\t\t\t\tForeign Relations\n\t\t\t\t\t\t\t\t\t\t": Foreign Relations
-            "\n\t\t\t\t\t\t\t\t\t\t\tGovernment Oversight\n\t\t\t\t\t\t\t\t\t\t": Government Oversight
             "\n\t\t\t\t\t\t\t\t\t\t\tGrants\n\t\t\t\t\t\t\t\t\t\t": Grants
             "\n\t\t\t\t\t\t\t\t\t\t\tGuns and Crime\n\t\t\t\t\t\t\t\t\t\t": Guns and Crime
             "\n\t\t\t\t\t\t\t\t\t\t\tHealthcare\n\t\t\t\t\t\t\t\t\t\t": Healthcare
-            "\n\t\t\t\t\t\t\t\t\t\t\tHelp with Federal Government\n\t\t\t\t\t\t\t\t\t\t": Help with Federal Government
             "\n\t\t\t\t\t\t\t\t\t\t\tHousing\n\t\t\t\t\t\t\t\t\t\t": Housing
             "\n\t\t\t\t\t\t\t\t\t\t\tImmigration\n\t\t\t\t\t\t\t\t\t\t": Immigration
             "\n\t\t\t\t\t\t\t\t\t\t\tJudiciary Issues\n\t\t\t\t\t\t\t\t\t\t": Judiciary Issues
             "\n\t\t\t\t\t\t\t\t\t\t\tLabor\n\t\t\t\t\t\t\t\t\t\t": Labor
             "\n\t\t\t\t\t\t\t\t\t\t\tLetter Requests\n\t\t\t\t\t\t\t\t\t\t": Letter Requests
             "\n\t\t\t\t\t\t\t\t\t\t\tMarriage and Family\n\t\t\t\t\t\t\t\t\t\t": Marriage and Family
-            "\n\t\t\t\t\t\t\t\t\t\t\tMedicare and Medicaid\n\t\t\t\t\t\t\t\t\t\t": Medicare and Medicaid
+            "\n\t\t\t\t\t\t\t\t\t\t\tMedicaid\n\t\t\t\t\t\t\t\t\t\t": Medicaid
             "\n\t\t\t\t\t\t\t\t\t\t\tNational Security\n\t\t\t\t\t\t\t\t\t\t": National Security
             "\n\t\t\t\t\t\t\t\t\t\t\tPostal Service\n\t\t\t\t\t\t\t\t\t\t": Postal Service
             "\n\t\t\t\t\t\t\t\t\t\t\tScience and Technology\n\t\t\t\t\t\t\t\t\t\t": Science and Technology
-            "\n\t\t\t\t\t\t\t\t\t\t\tSocial Security\n\t\t\t\t\t\t\t\t\t\t": Social Security
+            "\n\t\t\t\t\t\t\t\t\t\t\tSocial Security and Medicare\n\t\t\t\t\t\t\t\t\t\t": Social Security and Medicare
             "\n\t\t\t\t\t\t\t\t\t\t\tTaxes\n\t\t\t\t\t\t\t\t\t\t": Taxes
             "\n\t\t\t\t\t\t\t\t\t\t\tTelecommunications\n\t\t\t\t\t\t\t\t\t\t": Telecommunications
             "\n\t\t\t\t\t\t\t\t\t\t\tTour Request\n\t\t\t\t\t\t\t\t\t\t": Tour Request
@@ -184,8 +181,8 @@ contact_form:
     - javascript:
         - value: "Array.prototype.forEach.call(document.querySelectorAll('style,[rel=\"stylesheet\"],[type=\"text/css\"]'), function(element){ try{ element.parentNode.removeChild(element) } catch(err){} });"
     - click_on:
-        - value: Submit
-          selector: "form.-validate-form.form-contact[name='thisForm'] input[name='Submit']"
+        - value: Send
+          selector: "form.-validate-form.form-contact[name='thisForm']"
     - find:
         - selector: "h2"
           value: "Thank you!"
@@ -193,4 +190,4 @@ contact_form:
     headers:
       status: 200
     body:
-      contains: Thank you!
+      contains: Your message has been sent.

@@ -91,9 +91,12 @@ contact_form:
     - click_on:
         - value: Submit
           selector: "#edit-submit"
+    - find:
+        - selector: "h2"
+          value: "Status message"
   success:
     headers:
       status: 200
     body:
-      contains: Thank you for your submission.
+      contains: Thank you
 

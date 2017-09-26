@@ -7,7 +7,7 @@ contact_form:
     - javascript:
         - value: "Array.prototype.forEach.call(document.querySelectorAll('style,[rel=\"stylesheet\"],[type=\"text/css\"]'), function(element){ try{ element.parentNode.removeChild(element) } catch(err){} });"
     - find:
-        - selector: "#input-41379D65-C84B-E83D-BC59-3E535C89FC46"
+        - selector: "#form-41148127-C769-5460-FAAA-D06B26A0E47E"
     - fill_in:
         - name: input_41379D65-C84B-E83D-BC59-3E535C89FC46
           selector: "#input-41379D65-C84B-E83D-BC59-3E535C89FC46"
