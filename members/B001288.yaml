@@ -182,7 +182,9 @@ contact_form:
         - value: "Array.prototype.forEach.call(document.querySelectorAll('style,[rel=\"stylesheet\"],[type=\"text/css\"]'), function(element){ try{ element.parentNode.removeChild(element) } catch(err){} });"
     - click_on:
         - value: Send
-          selector: "form.-validate-form.form-contact[name='thisForm']"
+          selector: "input.btn[value='Send']"
+    - wait:
+        - value: 5
     - find:
         - selector: "h2"
           value: "Thank you!"
@@ -190,4 +192,4 @@ contact_form:
     headers:
       status: 200
     body:
-      contains: Your message has been sent.
+      contains: "Your message has been sent"
