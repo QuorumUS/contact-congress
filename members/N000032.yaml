@@ -62,9 +62,9 @@ contact_form:
     - javascript:
         - value: document.querySelector("#Message").value = document.querySelector("#Message").value.replace(/"/g, '');
     - click_on:
-        - selector: "#submit"
-    - find:
-        - selector: '#boxes-box-contact_bill_print_top > div > div'
+        - selector: '#submit'
+    - wait:
+        - value: 5
   success:
     headers:
       status: 200

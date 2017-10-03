@@ -181,7 +181,7 @@ contact_form:
         - value: document.querySelector("#input-BA957EB0-4040-F985-52CD-CF349BA209E1").value = document.querySelector("#input-BA957EB0-4040-F985-52CD-CF349BA209E1").value.replace(/"/g, '');
     - click_on:
         - value: Submit
-          selector: input.btn
+          selector: '#BA386D29-4040-F985-52CD-7B7B5096213C > div.control-group > div > input'
     - find:
       - selector: "h1"
         value: "Thank You" 
