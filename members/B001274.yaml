@@ -120,10 +120,8 @@ contact_form:
         - value: true
     - click_on:
         - selector: "#submit"
-    - find:
-        - selector: ".data"
   success:
     headers:
       status: 200
     body:
-      contains: your message has been sent
+      contains: you
