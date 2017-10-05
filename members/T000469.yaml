@@ -3,19 +3,7 @@ contact_form:
   method: get
   action: /forms/writeyourrep/
   steps:
-    - visit: "https://tonkoforms.house.gov/contact/"
-    - fill_in:
-        - name: zip5
-          selector: "form.zipform input[name='zip5'][size='6']"
-          value: $ADDRESS_ZIP5
-          required: true
-        - name: zip4
-          selector: "form.zipform input[name='zip4'][size='5']"
-          value: $ADDRESS_ZIP4
-          required: true
-    - click_on:
-        - value: Submit
-          selector: "form.zipform input[type='submit'][value='Submit']"
+    - visit: "https://tonko.house.gov/forms/writeyourrep/"
     - find:
         - selector: '#ctl00_ctl17_FirstName'
     - javascript:
