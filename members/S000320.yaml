@@ -106,11 +106,8 @@ contact_form:
     - click_on:
         - value: Submit
           selector: input.btn.btn-primary
-    - find:
-        - selector: h4
-          value: "Contact Form"
   success:
     headers:
       status: 200
     body:
-      contains: Thank you for contacting me. A representative will be in touch with you shortly.
+      contains: "you"

@@ -75,7 +75,7 @@ contact_form:
         - value: document.querySelector('#field_130638F0-2EEC-4C6B-83BE-11E83BB5CED3').value = document.querySelector('#field_130638F0-2EEC-4C6B-83BE-11E83BB5CED3').value.replace(/"/g, '');
     - click_on:
         - value: Submit
-          selector: #form_771F98E4-236A-4CAB-B9C2-5A4E7E993948 > div.buttonHolder.controls.clearfix > input
+          selector: '#form_771F98E4-236A-4CAB-B9C2-5A4E7E993948 > div.buttonHolder.controls.clearfix > input'
   success:
     headers:
       status: 200
