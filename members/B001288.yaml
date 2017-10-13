@@ -138,7 +138,7 @@ contact_form:
             "Wyoming ": WY
         - name: Subject
           selector: "#block4 > form > div:nth-child(14) > div > select"
-          value: $TOPIC
+          value: Education
           required: true
           options:
             "\n\t\t\t\t\t\t\t\t\t\t\tAcademy Nominations\n\t\t\t\t\t\t\t\t\t\t": Academy Nominations

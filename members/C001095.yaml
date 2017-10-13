@@ -138,7 +138,7 @@ contact_form:
             "Wyoming ": WY
         - name: Subject
           selector: "form.-validate-form.form-contact[name='thisForm'] select[name='Subject']"
-          value: $TOPIC
+          value: Education
           required: true
           options:
             "\n\t\t\t\t\t\t\t\t\t\t\tAbortion\n\t\t\t\t\t\t\t\t\t\t": Abortion
