@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://www.cochran.senate.gov/public/index.cfm/email-me"
+    - visit: "https://www.cochran.senate.gov/public/index.cfm/email-me"
     - fill_in:
         - name: field_D977F7A2-3618-49D6-A4DD-FC825487AA23
           selector: "#field_D977F7A2-3618-49D6-A4DD-FC825487AA23"
@@ -107,4 +107,4 @@ contact_form:
     headers:
       status: 200
     body:
-      contains: Thank you
+      contains: "Thank you"

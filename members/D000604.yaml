@@ -1,7 +1,7 @@
 bioguide: D000604
 contact_form:
   method: post
-  action: "https://dent.house.gov/?p=ContactForm#ZipCode_container"
+  action: "https://dent.house.gov/contactform"
   steps:
     - visit: "https://dent.house.gov/?p=ContactForm"
     - fill_in:
@@ -14,15 +14,15 @@ contact_form:
           value: $NAME_LAST
           required: true
         - name: Address1
-          selector: "#Address1"
+          selector: "#field_8E9E3A31-152C-405C-9219-88E275D9FEE3"
           value: $ADDRESS_STREET
           required: true
         - name: Address2
-          selector: "#Address2"
+          selector: "#field_5CA10CEB-379E-4A7A-BF7E-98FFBB23A620"
           value: $ADDRESS_STREET_2
           required: false
         - name: City
-          selector: "#City"
+          selector: "#field_38FD9CF7-5EA2-435B-A618-7C620C32BDA4"
           value: $ADDRESS_CITY
           required: true
         - name: ZipCode
@@ -38,16 +38,16 @@ contact_form:
           value: $EMAIL
           required: true
         - name: Subject
-          selector: "#Subject"
+          selector: "#field_C4F9752B-8275-40CB-BD7A-388CC853D30B"
           value: $SUBJECT
           required: true
         - name: Message
-          selector: "#Message"
+          selector: "#field_FBD6F680-347C-423F-BD01-31135A8ACE61"
           value: $MESSAGE
           required: true
     - select:
         - name: Prefix
-          selector: "#Prefix"
+          selector: "#field_9822D8AF-EF17-4A9B-95DF-CC3691A21366"
           value: $NAME_PREFIX
           required: true
           options:
@@ -67,8 +67,8 @@ contact_form:
             - Father
             - Pastor
         - name: Topic
-          selector: "#Topic"
-          value: $TOPIC
+          selector: "#field_C4F9752B-8275-40CB-BD7A-388CC853D30B"
+          value: "Education"
           required: true
           options:
             Agriculture: AGRI
@@ -107,18 +107,18 @@ contact_form:
             Other-not Listed: OTHER
     - check:
         - name: MessageType
-          selector: "#MessageType_1"
-          value: Express an opinion or share your views with me
+          selector: "input#field_FAFD72FD-79A2-4A97-AE76-F0B2ABAC636C_1"
+          value: "Express an opinion or share your views with me"
     - javascript:
-        - value: document.querySelector("#Message").value = document.querySelector("#Message").value.replace(/"/g, '');
+        - value: document.querySelector("#field_FBD6F680-347C-423F-BD01-31135A8ACE61").value = document.querySelector("#field_FBD6F680-347C-423F-BD01-31135A8ACE61").value.replace(/"/g, '');
     - recaptcha:
         - value: true
     - click_on:
-        - value: Submit
-          selector: input.primaryAction
+        - value: "Submit"
+          selector: "#form_C4E0C85A-1709-4E9E-AB35-C53CA235D98A > div.buttonHolder.controls.clearfix > input"
   success:
     headers:
       status: 200
     body:
-      contains: Thank you for sending me your email.
+      contains: "Thank you"
 
