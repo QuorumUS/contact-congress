@@ -101,9 +101,8 @@ contact_form:
         - value: document.querySelector("#required-message").value = document.querySelector("#required-message").value.replace(/"/g, '');
     - wait:
         - value: 5
-    - click_on:
-        - value: Recaptcha
-          selector: ".recaptcha-checkbox-checkmark"
+    - recaptcha:
+        - value: true
     - wait:
         - value: 5
     - click_on:
@@ -116,4 +115,4 @@ contact_form:
     headers:
       status: 200
     body:
-      contains: The following information has been submitted
+      contains: "Thank you"

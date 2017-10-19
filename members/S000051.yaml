@@ -3,48 +3,50 @@ contact_form:
   method: post
   action: "/htbin/formproc_za/zip-auth.txt%26form%3D/contact/email/email-zip-authenticated%26nobase%26fpGetVer%3D2"
   steps:
-    - visit: "https://sanford.house.gov/contact/email-me"
+    - visit: "https://sanfordforms.house.gov/contact/"
     - fill_in:
-        - name: required-zip5
-          selector: "input[name='zip5']"
+        - name: zip5
+          selector: "#ctl00_ctl34_ctl01_Text > div > form > input[type='text']:nth-child(1)"
           value: $ADDRESS_ZIP5
           required: true
+    - recaptcha:
+        - value: true
     - click_on:
-        - selector: "input[value='Submit']"
-    - wait:
-        - value: 5
+        - selector: "#ctl00_ctl34_ctl01_Text > div > form > input[type='submit']:nth-child(3)"
+    - find:
+        - selector: "#required-first"
     - fill_in:
-        - name: required-first
+        - name: ctl00_ctl34_FirstName
           selector: "#ctl00_ctl34_FirstName"
           value: $NAME_FIRST
           required: true
-        - name: required-last
-          selector: "#required-last"
+        - name: ctl00_ctl34_LastName
+          selector: "#ctl00_ctl34_LastName"
           value: $NAME_LAST
           required: true
-        - name: required-address
-          selector: "#required-address"
+        - name: ctl00_ctl34_Street
+          selector: "#ctl00_ctl34_Street"
           value: $ADDRESS_STREET
           required: true
-        - name: required-city
-          selector: "#required-city"
+        - name: ctl00_ctl34_City
+          selector: "#ctl00_ctl34_City"
           value: $ADDRESS_CITY
           required: true
-        - name: required-valid-email
-          selector: "#required-valid-email"
+        - name: ctl00_ctl34_Email
+          selector: "#ctl00_ctl34_Email"
           value: $EMAIL
           required: true
-        - name: required-phone
-          selector: "#required-phone"
+        - name: ctl00_ctl34_Phone
+          selector: "#ctl00_ctl34_Phone"
           value: $PHONE
           required: true
-        - name: required-message
-          selector: "#required-message"
+        - name: ctl00_ctl34_Body
+          selector: "#ctl00_ctl34_Body"
           value: $MESSAGE
           required: true
     - select:
-        - name: required-honorific-prefix
-          selector: "#required-honorific-prefix"
+        - name: ctl00_ctl34_PrefixList
+          selector: "#ctl00_ctl34_PrefixList"
           value: $NAME_PREFIX
           required: true
           options:
@@ -56,8 +58,8 @@ contact_form:
             - Dr.
             - The Honorable
             - Rabbi
-        - name: required-issue
-          selector: "#required-issue"
+        - name: ctl00_ctl34_IssuesList
+          selector: "#ctl00_ctl34_IssuesList"
           value: $TOPIC
           required: true
           options:
@@ -110,13 +112,13 @@ contact_form:
             "Yes, please contact me": "Y"
             "No, I wanted to voice my opinion": "N"
     - javascript:
-      - value: document.querySelector("#required-message").value = document.querySelector("#required-message").value.replace(/"/g, '');
+      - value: document.querySelector("#ctl00_ctl34_Body").value = document.querySelector("#ctl00_ctl34_Body").value.replace(/"/g, '');
     - recaptcha:
       - value: true
     - click_on:
-        - selector: "#submit"
+        - selector: "#ctl00_ctl34_SubmitButton"
   success:
     headers:
       status: 200
     body:
-      contains: your message has been sent
+      contains: "your message"
