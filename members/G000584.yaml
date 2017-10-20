@@ -1,6 +1,131 @@
 bioguide: G000584
-contact_form:
+contact_form: 
   method: POST
-  action: "/contact"
+  action: https://gianforte.house.gov/contact
   steps:
-    - visit: stubforcwc
+    - visit: https://gianforte.house.gov/contact/
+    - fill_in:
+      - name: zip5
+        selector: "#required-zip5"
+        required: true
+        value: $ADDRESS_ZIP5
+      - name: zip4
+        selector: "#zip4"
+        required: true
+        value: $ADDRESS_ZIP4
+    - click_on: 
+      - value: Go To Next Step
+        selector: "#submit"
+    - fill_in:
+      - name: "required-first"
+        selector: "#required-first"
+        required: true
+        value: $NAME_FIRST
+      - name: "required-last"
+        selector: "#required-last"
+        required: true
+        value: $NAME_LAST
+      - name: "required-address"
+        selector: "#required-address"
+        required: true
+        value: $ADDRESS_STREET
+      - name: "required-city"
+        selector: "#required-city"
+        required: true
+        value: $ADDRESS_CITY
+      - name: "required-email"
+        selector: "#required-valid-email"
+        required: true
+        value: $EMAIL
+      - name: "phone"
+        selector: "#required-phone"
+        required: true
+        value: $PHONE
+      - name: "required-message"
+        selector: "#required-message"
+        required: true
+        value: $MESSAGE
+    - select:
+      - name: "required-honorific-prefix"
+        selector: "#required-honorific-prefix"
+        required: true
+        value: "$NAME_PREFIX"
+        options:
+          - "Ms."
+          - "Miss"
+          - "Mrs."
+          - "Mr."
+          - "Mr. and Mrs."
+          - "Rev."
+          - "Dr."
+          - "The Honorable"
+          - "Rabbi"
+    - select:
+      - name: required-issue
+        selector: "#required-issue"
+        value: "Education"
+        required: true
+        options:
+          "Agriculture": "AGR"
+          "Animals": "AN"
+          "Arts and Humanities": "ART"
+          "Banking and Finance": "BANK"
+          "Budget and Economy": "BUD"
+          "Help With a Federal Agency": "Casework"
+          "Campaign Finance Reform": "CFR"
+          "Congress and Elections": "CONG"
+          "Defense and Military": "DEF"
+          "Economy": "ECON"
+          "Education": "EDU"
+          "Energy": "ENE"
+          "Environment": "ENV"
+          "Federal Employees": "FED"
+          "Foreign Relations": "FR"
+          "Government Reform": "GOV"
+          "Guns": "Gun"
+          "Health": "HEA"
+          "Homeland Security": "HOM"
+          "Housing and Urban Development": "HUD"
+          "Immigration": "IMM"
+          "International Relations": "INT"
+          "Judiciary": "JUD"
+          "Labor": "LAB"
+          "LGBT": "LGBT"
+          "No Response Necessary": "NRN"
+          "Post Office": "POST"
+          "Science and Technology": "SCI"
+          "Social Issues": "SOC"
+          "Senior Citizens": "SENIORS"
+          "Social Security": "SSEC"
+          "Social Services": "SOC.SERVICES"
+          "Taxes": "TAX"
+          "Telecommunications": "TEL"
+          "Tours": "Tours"
+          "Transportation": "TRA"
+          "Trade": "TRADE"
+          "Veterans": "VET"
+          "Women's Issues": "WOMEN"
+          "Welfare": "WEL"
+          "Other Issue": "OTHER"
+    - select:
+      - name: required-response
+        selector: "#required-response"
+        value: "Yes, please contact me"
+        required: true
+        options:
+          "Yes, please contact me": "Y"
+          "No, I wanted to voice my opinion": "N"
+    - javascript:
+        - value: document.querySelector("#required-message").value = document.querySelector("#required-message").value.replace(/"/g, '');
+    - recaptcha:
+      - value: true
+    - click_on:
+      - value: "Send Email to Representative Gianforte"
+        selector: "#submit"
+    - wait:
+      - value: 3
+  success:
+    headers:
+      status: 200
+    body:
+      contains: " "

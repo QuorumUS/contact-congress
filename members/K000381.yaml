@@ -253,10 +253,8 @@ contact_form:
           selector: input.btn
     - wait:
         - value: 3
-    - find: 
-        - selector: "#form-8338AD0F-4040-F985-52CD-C120404820C8 > div > h1"
   success:
     headers:
       status: 200
     body:
-      contains: Thank You
+      contains: " "
