@@ -127,4 +127,4 @@ contact_form:
     headers:
       status: 200
     body:
-      contains: Voice Your Opinion
+      contains: "Voice Your Opinion"
