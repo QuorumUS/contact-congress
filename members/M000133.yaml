@@ -4,6 +4,8 @@ contact_form:
   action: /contact
   steps:
     - visit: "http://www.markey.senate.gov/contact"
+    - javascript:
+      - value: "Array.prototype.forEach.call(document.querySelectorAll('style,[rel=\"stylesheet\"],[type=\"text/css\"]'), function(element){ try{ element.parentNode.removeChild(element) } catch(err){} });"
     - select:
       - name: issue
         selector: "#issue"
@@ -61,7 +63,7 @@ contact_form:
           - Veterans
           - Welfare/SNAP
     - wait:
-      - value: 5
+      - value: 3
     - find:
       - selector: "#continue-form"
     - fill_in:
@@ -179,19 +181,21 @@ contact_form:
             WV: WV
             WY: WY
     - wait:
-        - value: 5
+        - value: 1
     - javascript:
         - value: document.querySelector("#message").value = document.querySelector("#message").value.replace(/"/g, '');
+    - recaptcha:
+        - value: true
+    - javascript:
+        - value: document.querySelector("#side-search-btn").disabled = false;
     - click_on:
         - value: Send
           selector: "#side-search-btn"
     - find:
         - selector: "h2"
           value: "Thank You"
-    - wait:
-        - value: 3
   success:
     headers:
       status: 200
     body:
-      contains: Thank you for contacting me.
+      contains: "Thank you for contacting me"

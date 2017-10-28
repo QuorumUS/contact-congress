@@ -3,15 +3,11 @@ contact_form:
   method: post
   action: /contact/email-me
   steps:
-<<<<<<< HEAD
-    - visit: "https://www.scott.senate.gov/contact/email-me"
-=======
     - visit: "http://www.scott.senate.gov/contact/email-me"
     - click_on:
         - selector: ".opinion"
     - find:
         - selector: "#input-6A3EC423-EABA-ADAE-CDDA-1F2B8C52B264"
->>>>>>> upstream/master
     - fill_in:
         - name: input_6A3EC423-EABA-ADAE-CDDA-1F2B8C52B264
           selector: "#input-6A3EC423-EABA-ADAE-CDDA-1F2B8C52B264"
@@ -105,24 +101,12 @@ contact_form:
     - javascript:
         - value: document.querySelector("#input-6AC98E37-0486-54F9-5AD3-8111C173B526").click();
     - click_on:
-<<<<<<< HEAD
-        - value: Submit
-          selector: "#edit-submit"
-    - find:
-        - selector: "h2"
-          value: "Status message"
-=======
         - selector: ".btn"
     - find:
         - selector: h1
           value: Thank You
->>>>>>> upstream/master
   success:
     headers:
       status: 200
     body:
-<<<<<<< HEAD
-      contains: T
-=======
       contains: Thank you for contacting my office
->>>>>>> upstream/master
