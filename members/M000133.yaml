@@ -184,17 +184,10 @@ contact_form:
         - value: 1
     - javascript:
         - value: document.querySelector("#message").value = document.querySelector("#message").value.replace(/"/g, '');
-<<<<<<< HEAD
-    - recaptcha:
-        - value: true
-    - javascript:
-        - value: document.querySelector("#side-search-btn").disabled = false;
-=======
     - javascript:
         - value: document.querySelector("#side-search-btn").disabled = false;
     - recaptcha:
         - value: true
->>>>>>> upstream/master
     - click_on:
         - value: Send
           selector: "#side-search-btn"
