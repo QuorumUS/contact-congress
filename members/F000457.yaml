@@ -3,7 +3,7 @@ contact_form:
   method: POST
   action: http://www.franken.senate.gov/?p=email_al
   steps:
-    - visit: http://www.franken.senate.gov/?p=email_al
+    - visit: "http://www.franken.senate.gov/?p=email_al"
     - fill_in:
       - name: firstName
         selector: "#firstName"
@@ -196,13 +196,8 @@ contact_form:
     - click_on:
       - value: Submit
         selector: "#thisForm input[title='Submit']"
-    - find:
-      - selector: "p"
-        value: "Thank you!"
-        options:
-          wait: 30
   success:
     headers:
       status: 200
     body:
-      contains: "Your message has been sent."
+      contains: "Thank you"
