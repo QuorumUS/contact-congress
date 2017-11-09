@@ -104,14 +104,8 @@ contact_form:
     - click_on:
         - value: Submit
           selector: ".btn-primary"
-<<<<<<< HEAD
-=======
-    - find:
-        - selector: "p"
-          value: "Thank you, your message has been received."
->>>>>>> upstream/master
   success:
     headers:
       status: 200
     body:
-      contains: "Thank you"
+      contains: "Thank you, your message has been received"
