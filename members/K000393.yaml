@@ -1,9 +1,9 @@
-kbioguide: K000393
+bioguide: K000393
 contact_form:
-  method: post
-  action: ""
+  method: POST
+  action: "http://www.kennedy.senate.gov/public/email-me"
   steps:
-    - visit: "https://www.kennedy.senate.gov/public/email-me"
+    - visit: "http://www.kennedy.senate.gov/public/email-me"
     - fill_in:
         - name: "field_472D11A0-26BE-4451-9B65-F206AE29D442"
           selector: "#field_472D11A0-26BE-4451-9B65-F206AE29D442"
@@ -55,9 +55,72 @@ contact_form:
             - The Honorable
             - Representative
             - Senator
+        - name: "field_DD1ADABB-3BA8-4126-B163-B9F8426FA7D2"
+          selector: "#field_DD1ADABB-3BA8-4126-B163-B9F8426FA7D2"
+          value: $ADDRESS_STATE_POSTAL_ABBREV
+          required: true
+          options:
+            AL: AL
+            AK: AK
+            AS: AS
+            AZ: AZ
+            AR: AR
+            CA: CA
+            CO: CO
+            CT: CT
+            DE: DE
+            DC: DC
+            FL: FL
+            GA: GA
+            GU: GU
+            HI: HI
+            ID: ID
+            IL: IL
+            IN: IN
+            IA: IA
+            KS: KS
+            KY: KY
+            LA: LA
+            ME: ME
+            MH: MH
+            MD: MD
+            MA: MA
+            MI: MI
+            MN: MN
+            MS: MS
+            MO: MO
+            MT: MT
+            NE: NE
+            NV: NV
+            NH: NH
+            NJ: NJ
+            NM: NM
+            NY: NY
+            NC: NC
+            ND: ND
+            MP: MP
+            OH: OH
+            OK: OK
+            OR: OR
+            PW: PW
+            PA: PA
+            PR: PR
+            RI: RI
+            SC: SC
+            SD: SD
+            TN: TN
+            TX: TX
+            UT: UT
+            VT: VT
+            VI: VI
+            VA: VA
+            WA: WA
+            WV: WV
+            WI: WI
+            WY: WY
         - name: "field_DF8BEEC3-BBDA-44E5-8A19-2D1CA6AA181C"
           selector: "#field_DF8BEEC3-BBDA-44E5-8A19-2D1CA6AA181C"
-          value: $TOPIC
+          value: "Education"
           required: true
           options:
             2nd Amendment: 2nd Amendment
@@ -104,8 +167,13 @@ contact_form:
     - click_on:
         - value: Submit
           selector: ".btn-primary"
+    - wait:
+       - value: 3
+    - find:
+       - selector: "p"
+         value: "Thank you, your message has been received."
   success:
     headers:
       status: 200
     body:
-      contains: "Thank you, your message has been received"
+      contains: "Thank"

@@ -7,7 +7,7 @@ contact_form:
     - select:
         - name: "submitted[issue]"
           selector: "#edit-submitted-issue"
-          value: $TOPIC
+          value: "Homeland Security"
           required: true
           options:
             Abortion: abortion
@@ -107,6 +107,10 @@ contact_form:
             West Virginia: WV
             Wisconsin: WI
             Wyoming: WY
+        - name: "submitted[federal_agency_involved_dropdown]"
+          selector: "#edit-submitted-federal-agency-involved-dropdown"
+          value: "homeland_security"
+          required: true
     - fill_in:
         - name: "submitted[prefix_optional]"
           selector: "#edit-submitted-prefix-optional"
@@ -144,6 +148,10 @@ contact_form:
           selector: "#edit-submitted-email-address"
           value: $EMAIL
           required: true
+        - name: "submitted[social_security_number]"
+          selector: "#edit-submitted-social-security-number"
+          value: '123456789'
+          required: true
     - javascript:
         - value: document.querySelector("#edit-submitted-message").value = document.querySelector("#edit-submitted-message").value.replace(/"/g, '');
     - click_on:
@@ -153,4 +161,4 @@ contact_form:
     headers:
       status: 200
     body:
-      contains: Thank you
+      contains: ""
