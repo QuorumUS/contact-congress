@@ -109,4 +109,8 @@ contact_form:
     headers:
       status: 200
     body:
+<<<<<<< HEAD
       contains: "you"
+=======
+      contains: Thank you for contacting me. A representative will be in touch with you shortly.
+>>>>>>> upstream/master
