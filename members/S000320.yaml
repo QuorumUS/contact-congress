@@ -102,9 +102,19 @@ contact_form:
         - value: document.querySelector("#field_5489134D-7194-47B5-A895-09DF853923E1").value = document.querySelector("#field_5489134D-7194-47B5-A895-09DF853923E1").value.replace(/"/g, '');
     - recaptcha:
         - value: true
+<<<<<<< HEAD
     - click_on:
         - value: Submit
           selector: input.btn.btn-primary
+=======
+    - javascript:
+        - value: document.querySelector("input.btn.btn-primary").click();
+    - wait:
+        - value: 5
+    - find:
+        - selector: h4
+          value: "Contact Form"
+>>>>>>> upstream/master
   success:
     headers:
       status: 200
