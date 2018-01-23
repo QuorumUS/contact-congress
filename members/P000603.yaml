@@ -102,8 +102,4 @@ contact_form:
     headers:
       status: 200
     body:
-<<<<<<< HEAD
-      contains: Connect
-=======
       contains: Thank you for your submission.
->>>>>>> upstream/master
