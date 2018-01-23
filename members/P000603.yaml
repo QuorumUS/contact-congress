@@ -97,7 +97,7 @@ contact_form:
     - javascript:
         - value: document.querySelector("#edit-submit--2").click();
     - find:
-        - selector: ".alert-success"
+        - selector: "div.alert.alert-block.alert-success.messages.status"
   success:
     headers:
       status: 200
