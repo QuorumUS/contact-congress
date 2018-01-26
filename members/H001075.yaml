@@ -100,23 +100,13 @@ contact_form:
     - click_on:
         - value: Submit
           selector: ".btn"
-<<<<<<< HEAD
     - wait:
         - value: 3
     - find:
         - value: "Thank You"
         - selector: "h1"
-=======
-    - find:
-        - value: "Thank You"
-          selector: "h1"
->>>>>>> upstream/master
   success:
     headers:
       status: 200
     body:
-<<<<<<< HEAD
       contains: "Thank you for contacting my office."
-=======
-      contains: "Thank you for contacting my office."
->>>>>>> upstream/master
