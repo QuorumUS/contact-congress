@@ -175,6 +175,11 @@ contact_form:
 =======
     - javascript:
         - value: document.querySelector(".btn-primary").click();
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+    - wait:
+        - value: 10
 >>>>>>> upstream/master
     - find:
        - selector: "#group_5496e035-1b75-4f5e-8954-76cb881efb87"
