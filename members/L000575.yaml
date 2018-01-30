@@ -258,8 +258,4 @@ contact_form:
     headers:
       status: 200
     body:
-<<<<<<< HEAD
-      contains: " "
-=======
       contains: Thank you for submitting your Request to our office.
->>>>>>> upstream/master

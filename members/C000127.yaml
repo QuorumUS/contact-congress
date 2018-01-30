@@ -62,32 +62,6 @@ contact_form:
           value: "Other"
           required: true
           options:
-<<<<<<< HEAD
-            - Agriculture
-            - Budget
-            - Department of Defense
-            - Economy and Jobs
-            - Education
-            - Energy
-            - Environment
-            - First Responders
-            - Foreign Affairs
-            - Gun Violence
-            - Health Care
-            - Homeland Security
-            - Housing
-            - Immigration
-            - Indian Affairs
-            - Labor
-            - Law Enforcement
-            - Other
-            - Social Security
-            - Small Business
-            - Taxes
-            - Technology
-            - Transportation
-            - Veterans
-=======
             Agriculture: Agriculture
             Appropriations: APPROPS
             "Arts & Humanities": ARTS
@@ -117,7 +91,6 @@ contact_form:
             Technology: TECH
             Transportation: Transportation
             Veterans: Veterans
->>>>>>> upstream/master
     - check:
         - name: input_072CAC5F-5056-A066-6015-FC4219539F7B
           selector: "#response"

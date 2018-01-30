@@ -48,47 +48,6 @@ contact_form:
           value: "Other"
           required: true
           options:
-<<<<<<< HEAD
-            - Government Shutdown
-            - Health Care Costs
-            - Economy/Jobs
-            - Gas Prices
-            - Immigration
-            - National Security
-            - Social Security
-            - Terrorism
-            - Abortion
-            - Agriculture
-            - Arctic National Wildlife Refuge
-            - Aviation
-            - Banking-General
-            - Budget
-            - "Children's Issues"
-            - Communications
-            - Defense-General
-            - Economy-General
-            - Education
-            - Energy
-            - Environment
-            - Foreign Affairs
-            - Global Warming
-            - Government Affairs
-            - Gun Control
-            - Health Care-General
-            - Housing
-            - Intelligence Issues
-            - Judiciary
-            - Labor
-            - Nuclear Weapons
-            - "Seniors' Issues"
-            - Small Business
-            - Tax-General
-            - Trade-General
-            - Transportation
-            - Veterans Affairs
-            - Violence
-            - Other
-=======
             Abortion: AB
             Agriculture: AG
             Banking: BA
@@ -130,7 +89,6 @@ contact_form:
             Water: WATR
             Welfare: WEL
             Other: OTH
->>>>>>> upstream/master
     - recaptcha:
         - value: true
     - click_on:

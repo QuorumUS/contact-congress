@@ -164,25 +164,13 @@ contact_form:
         - value: document.querySelector("#field_51E3C368-B801-4DE3-87C7-BA4F503FD791").value = document.querySelector("#field_51E3C368-B801-4DE3-87C7-BA4F503FD791").value.replace(/"/g, '');
     - recaptcha:
         - value: true
-<<<<<<< HEAD
-    - wait:
-       - value: 2
-    - click_on:
-        - value: Submit
-          selector: ".btn-primary"
-    - wait:
-       - value: 3
-=======
     - javascript:
         - value: document.querySelector(".btn-primary").click();
-<<<<<<< HEAD
->>>>>>> upstream/master
-=======
     - wait:
         - value: 10
->>>>>>> upstream/master
     - find:
-       - selector: "#group_5496e035-1b75-4f5e-8954-76cb881efb87"
+       - selector: "p"
+         value: "Thank you, your message has been received."
   success:
     headers:
       status: 200
