@@ -93,7 +93,7 @@ contact_form:
     - wait:
         - value: 10
     - find:
-        - selector: h4
+       - selector: h2
   success:
     headers:
       status: 200

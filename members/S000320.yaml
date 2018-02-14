@@ -104,11 +104,6 @@ contact_form:
         - value: document.querySelector("#g-recaptcha-response").style.display = "block";
     - recaptcha:
         - value: true
-<<<<<<< HEAD
-    - click_on:
-        - value: Submit
-          selector: input.btn.btn-primary
-=======
     - javascript:
         - value: document.querySelector("input.btn.btn-primary").click();
     - wait:
@@ -116,13 +111,8 @@ contact_form:
     - find:
         - selector: h4
           value: "Contact Form"
->>>>>>> upstream/master
   success:
     headers:
       status: 200
     body:
-<<<<<<< HEAD
-      contains: "you"
-=======
       contains: Thank you for contacting me. A representative will be in touch with you shortly.
->>>>>>> upstream/master
