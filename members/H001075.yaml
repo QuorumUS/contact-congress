@@ -61,7 +61,7 @@ contact_form:
             - Sister
     - choose:
         - name: "input_6753407D-EBDA-2CAE-490E-28C4444D2907"
-          selector: "[type='radio'][name='input_6753407D-EBDA-2CAE-490E-28C4444D2907']"
+          selector: "#issue [name='input_6753407D-EBDA-2CAE-490E-28C4444D2907']"
           value: $TOPIC
           required: true
           options:
