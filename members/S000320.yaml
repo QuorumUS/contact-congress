@@ -108,9 +108,6 @@ contact_form:
         - value: document.querySelector("input.btn.btn-primary").click();
     - wait:
         - value: 10
-    - find:
-        - selector: h4
-          value: "Contact Form"
   success:
     headers:
       status: 200
