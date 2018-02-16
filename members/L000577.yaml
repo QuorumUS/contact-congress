@@ -88,12 +88,13 @@ contact_form:
         - value: document.querySelector("#field_E1F6236D-5A16-4C23-93B1-A9DD0132AD48").value = document.querySelector("#field_E1F6236D-5A16-4C23-93B1-A9DD0132AD48").value.replace(/"/g, '');
     - recaptcha:
         - value: true
-    - javascript:
-        - value: document.querySelector("input.btn.btn-primary").click();
+    - click_on:
+        - value: Submit
+          selector: 'div.buttonHolder.controls > input.btn'
     - wait:
-        - value: 10
+        - value: 20
     - find:
-       - selector: h2
+       - selector: h4
   success:
     headers:
       status: 200
